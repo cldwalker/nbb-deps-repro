@@ -3,9 +3,10 @@
 When running via `node` the `nbb.edn` dependencies cannot be located.
 
 ```bash
-npm install 
-npx nbb
-node card-get.mjs
+npm install
+# Install package to use bin executable from any directory
+npm install -g
+nbb-deps-repro
 ```
 
 You will see something like this:
@@ -20,4 +21,3 @@ Error: Could not find namespace: camel-snake-kebab.core
     at file:///home/ray/fc/repos/card-main/node_modules/nbb/lib/nbb_core.js:2214:244
     at async file:///home/ray/fc/repos/card-main/card-get.mjs:5:21
 ```
-

@@ -1,7 +1,13 @@
+#!/usr/bin/env node
+
 import { addClassPath, loadFile } from 'nbb';
+import { fileURLToPath } from 'url';
+import { dirname, resolve } from 'path';
 
-addClassPath("src")
+const __dirname = fileURLToPath(dirname(import.meta.url));
 
-const { handler } = await loadFile('./src/card_get.cljs');
+addClassPath(resolve(__dirname, 'src'));
+const { handler } = await loadFile(resolve(__dirname, 'src/card_get.cljs'));
 
+console.log("HANDLER", handler);
 export { handler }

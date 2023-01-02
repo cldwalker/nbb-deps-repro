@@ -1,5 +1,10 @@
 {
+  "name": "nbb-deps-repro",
+  "version": "1.0.0",
   "dependencies": {
-    "nbb": "1.0.139"
+    "nbb": "1.1.157"
+  },
+  "bin": {
+    "nbb-deps-repro": "card-get.mjs"
   }
 }
