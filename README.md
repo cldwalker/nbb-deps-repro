@@ -6,6 +6,8 @@ When running via `node` the `nbb.edn` dependencies cannot be located.
 npm install
 # Install package to use bin executable from any directory
 npm install -g
+# cd to a different directory to run executable on $PATH
+cd
 nbb-deps-repro
 ```
 
